@@ -6,13 +6,19 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+
+      <form className="m-form" name="helpdesk" method="POST" netlify-honeypot="bot-field" data-netlify={true}>
+
+      <input name="bot-field" hidden/>
+      
+      <input placeholder="Your Name" required></input>
+      <textarea placeholder="What can we help you with?" required></textarea>
+      <button type="submit">Submit Ticket</button>
+
+      </form>
+
+
   </Layout>
 )
 
