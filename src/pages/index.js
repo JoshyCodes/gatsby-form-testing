@@ -15,13 +15,13 @@ const IndexPage = () => (
       data-netlify-honeypot="bot-field"
     >
       <p>
-        <label>Your Name: <input type="text" name="name" /></label>   
+        <input name="name" />
       </p>
       <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <textarea name="message" />
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button>Send</button>
       </p>
     </form>
 
