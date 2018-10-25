@@ -11,11 +11,11 @@ const IndexPage = () => (
       <form className="m-form" name="helpdesk" method="POST" netlify-honeypot="bot-field" data-netlify={true}>
 
       <input name="bot-field" hidden></input>
-
+        <br />
       <input placeholder="Your Name" required></input>
-        <br />>
+        <br />
       <textarea placeholder="What can we help you with?" required></textarea>
-        <br />>      
+        <br />    
       <button type="submit">Submit Ticket</button>
 
       </form>
