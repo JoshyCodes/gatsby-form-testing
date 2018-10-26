@@ -10,7 +10,7 @@ const IndexPage = () => (
 
     <form 
       name="contact"
-      method="POST" 
+      method="post" 
       action="/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
