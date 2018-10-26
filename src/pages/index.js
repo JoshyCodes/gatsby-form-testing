@@ -8,25 +8,23 @@ const IndexPage = () => (
 
   <Layout>
 
-    <form name="contact" method="post" action="/" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
 
-      <input type="hidden" name="bot-field" />
-
+      <input type="hidden" name="form-name" value="contact" /> 
+  
       <p>
-        <input name="name" id="fname" />
+        <input name="name" />
       </p>
-      
       <p>
-        <textarea name="message" id="fmsg" />
+        <textarea name="message" />
       </p>
-      
       <p>
-        <button type="submit" value="Send" />>
+        <button>Send</button>
       </p>
 
     </form>
 
-</Layout>
+  </Layout>
 
 )
 
