@@ -11,6 +11,7 @@ const IndexPage = () => (
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       action="/thanks/"
+      hidden
     >
       <input name="name" placeholder="Your Name" type="text" />
       <input name="email" placeholder="name@name.com" type="email" />
