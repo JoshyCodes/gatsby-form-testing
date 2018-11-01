@@ -1,5 +1,5 @@
 import React from "react";
-import { navigateTo } from "gatsby-link";
+import { Link } from 'gatsby';
 
 const IndexPage = () => (
   <div>
