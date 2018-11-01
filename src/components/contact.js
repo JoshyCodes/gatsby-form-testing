@@ -36,38 +36,34 @@ export default class Contact extends React.Component {
     return (
       <div>
         <h1>Contact</h1>
-        <form
-          name="contact2"
-          method="post"
-          action="/page-2/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="contact2" value="contact" />
+
+<form name="contact3" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  {/* You still need to add the hidden input with the form name to your JSX form */}
+  <input type="hidden" name="contact3" value="contact" />
+
+
           <p hidden>
             <label>
               Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
+              <input name="bot-field" />
             </label>
           </p>
           <p>
             <label>
               Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
+              <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
               Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
+              <input type="email" name="email" />
             </label>
           </p>
           <p>
             <label>
               Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
+              <textarea name="message" />
             </label>
           </p>
           <p>
