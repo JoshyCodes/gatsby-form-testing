@@ -1,8 +1,8 @@
 var React = require('react')
-var BasicInfo = require('../components/form')
+var BasicInfo = require('./Form')
 //var MoreInfo = require('./MoreInfo')
 //var Confirm = require('./Confirm')
-//var Success = require('./Success')
+//xvar Success = require('./Success')
 
 
 var ticketValues = {
