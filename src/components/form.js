@@ -26,6 +26,7 @@ var BasicInfo = createReactClass({
 
     )
   },
+
   nextStep: function(e) {
     e.preventDefault()
 
@@ -42,4 +43,4 @@ var BasicInfo = createReactClass({
 
 })
 
-module.exports = BasicInfo
+export default BasicInfo
