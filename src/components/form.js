@@ -1,8 +1,8 @@
 import React from "react";
+var createReactClass = require('create-react-class');
 
-class BasicInfo extends React.Component{
-  
-  render(){
+var BasicInfo = createReactClass({
+  render: function() {
 
     return(
 
@@ -20,13 +20,26 @@ class BasicInfo extends React.Component{
         <input className="c-form__field f-form-control" name="email" placeholder="name@name.com" type="email" />
         <textarea className="c-form__field f-form-control" name="message" />
         
-        <button className="c-btn c-form__submit">Send</button>
+        <button className="c-btn c-form__submit" onClick={this.nextStep}>Send</button>
       
       </form>
 
     )
+  },
+  nextStep: function(e) {
+    e.preventDefault()
 
+    // Get values via this.refs
+    var data = {
+      name     : this.refs.name.getDOMNode().value,
+      password : this.refs.password.getDOMNode().value,
+      email    : this.refs.email.getDOMNode().value,
+    }
+
+    this.props.saveValues(data)
+    this.props.nextStep()
   }
-}
 
-export default BasicInfo
+})
+
+module.exports = BasicInfo

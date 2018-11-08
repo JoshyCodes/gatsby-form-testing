@@ -1,5 +1,6 @@
 var React = require('react')
-import Form from '../components/form'
+import BasicInfo from '../components/form'
+import MoreInfo from '../components/MoreInfo'
 //var MoreInfo = require('./MoreInfo')
 //var Confirm = require('./Confirm')
 //xvar Success = require('./Success')
