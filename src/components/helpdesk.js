@@ -1,6 +1,6 @@
 var React = require('react')
 import BasicInfo from '../components/form'
-var MoreInfo = require('../components/MoreInfo')
+//var MoreInfo = require('../components/MoreInfo')
 //var Confirm = require('./Confirm')
 //xvar Success = require('./Success')
 var createReactClass = require('create-react-class');
