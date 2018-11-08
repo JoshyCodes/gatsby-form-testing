@@ -37,7 +37,9 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          {children}
+          <div id="content" className="c-content">
+            {children}
+          </div>
         </div>
       </>
     )}
