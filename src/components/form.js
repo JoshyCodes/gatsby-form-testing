@@ -1,4 +1,4 @@
-import React from "react";
+var React = require('react');
 var createReactClass = require('create-react-class');
 
 var BasicInfo = createReactClass({
