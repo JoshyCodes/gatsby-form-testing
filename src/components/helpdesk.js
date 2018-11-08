@@ -1,5 +1,5 @@
 var React = require('react')
-var BasicInfo = require('./Form')
+var BasicInfo = require('../components/Form')
 //var MoreInfo = require('./MoreInfo')
 //var Confirm = require('./Confirm')
 //var Success = require('./Success')
