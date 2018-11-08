@@ -1,6 +1,6 @@
 import React from "react";
 
-class Form extends React.Component{
+class BasicInfo extends React.Component{
   
   render(){
 
