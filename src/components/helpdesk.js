@@ -1,5 +1,5 @@
 var React = require('react')
-import BasicInfo from '../components/form'
+var BasicInfo = require('../components/form')
 //var MoreInfo = require('../components/MoreInfo')
 //var Confirm = require('./Confirm')
 //xvar Success = require('./Success')
@@ -12,7 +12,7 @@ var ticketValues = {
     message : null
 }
 
-var helpdesk = createReactClass({
+var Helpdesk = createReactClass({
     getInitialState: function() {
         return{
             step: 1 
@@ -68,4 +68,4 @@ var helpdesk = createReactClass({
 
 })
 
-export default helpdesk
+module.export = Helpdesk

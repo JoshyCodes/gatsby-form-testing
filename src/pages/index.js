@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-var helpdesk = require('../components/helpdesk')
+import Helpdesk from '../components/helpdesk'
 
 const IndexPage = () => (
 
@@ -11,7 +11,7 @@ const IndexPage = () => (
       <p className="c-intro__copy">Welcome to our new HelpDesk site. Please fill out the form below to begin the healing!</p>
     </div>
 
-    <helpdesk />
+    <Helpdesk />
  
   </Layout>
 
