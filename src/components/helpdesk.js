@@ -3,6 +3,7 @@ import Form from '../components/form'
 //var MoreInfo = require('./MoreInfo')
 //var Confirm = require('./Confirm')
 //xvar Success = require('./Success')
+var createReactClass = require('create-react-class');
 
 
 var ticketValues = {
