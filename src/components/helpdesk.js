@@ -68,4 +68,4 @@ var helpdesk = createReactClass({
 
 })
 
-module.exports = helpdesk
+export default helpdesk
