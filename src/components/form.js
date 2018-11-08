@@ -31,13 +31,13 @@ var BasicInfo = createReactClass({
     e.preventDefault()
 
     // Get values via this.refs
-    var data = {
-      name     : this.refs.name.getDOMNode().value,
-      password : this.refs.password.getDOMNode().value,
-      email    : this.refs.email.getDOMNode().value,
-    }
+    //var data = {
+    //  name     : this.refs.name.getDOMNode().value,
+    //  password : this.refs.password.getDOMNode().value,
+    //  email    : this.refs.email.getDOMNode().value,
+    //}
 
-    this.props.saveValues(data)
+    //this.props.saveValues(data)
     this.props.nextStep()
   }
 

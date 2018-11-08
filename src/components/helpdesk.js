@@ -1,7 +1,7 @@
 import React from 'react'
 import BasicInfo from '../components/form'
-//var MoreInfo = require('../components/MoreInfo')
-//var Confirm = require('./Confirm')
+import MoreInfo from '../components/MoreInfo'
+import Submit from '../components/submit'
 //xvar Success = require('./Success')
 import createReactClass from 'create-react-class'
 
@@ -50,17 +50,19 @@ var Helpdesk = createReactClass({
                                     previousStep={this.previousStep}
                                     saveValues={this.saveValues} />
             case 3:
-                return <Confirm   ticketValues={ticketValues}
+                return <Submit      ticketValues={ticketValues}
                                     previousStep={this.previousStep}
-                                    submitTicket={this.submitTicket} />                        
-            case 4:
-                return <Success   ticketValues={ticketValues} />
+                                    //submitTicket={this.submitTicket} 
+                                    />                        
+        //    case 4:
+        //        return <Success     ticketValues={ticketValues} />
         }
     },
 
     render: function() {
         return(
             <div>
+                <span className="progress-step">Step {this.state.step}</span>
                 {this.showStep()}
             </div>
         )
