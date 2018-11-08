@@ -11,10 +11,10 @@ var ticketValues = {
     message : null
 }
 
-var helpdesk = React.createClass({
+var helpdesk = createReactClass({
     getInitialState: function() {
         return{
-            step: 1
+            step: 1 
         }
     },
 
