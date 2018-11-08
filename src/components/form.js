@@ -13,7 +13,7 @@ var BasicInfo = createReactClass({
       data-netlify-honeypot="bot-field"
       action="/thanks/"
       className="c-form"
-    >
+      >
         <input type="hidden" name="form-name" value="contact-form" />
 
         <input className="c-form__field f-form-control" name="name" placeholder="Your Name" type="text" />
@@ -29,4 +29,4 @@ var BasicInfo = createReactClass({
 
 })
 
-export default BasicInfo
+module.exports = BasicInfo
