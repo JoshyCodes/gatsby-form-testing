@@ -1,9 +1,9 @@
-var React = require('react')
-var BasicInfo = require('../components/form')
+import React from 'react'
+import BasicInfo from '../components/form'
 //var MoreInfo = require('../components/MoreInfo')
 //var Confirm = require('./Confirm')
 //xvar Success = require('./Success')
-var createReactClass = require('create-react-class');
+import createReactClass from 'create-react-class'
 
 
 var ticketValues = {
@@ -68,4 +68,4 @@ var Helpdesk = createReactClass({
 
 })
 
-module.export = Helpdesk
+export default Helpdesk

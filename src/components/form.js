@@ -1,5 +1,5 @@
-var React = require('react');
-var createReactClass = require('create-react-class');
+import React from 'react'
+import createReactClass from 'create-react-class'
 
 var BasicInfo = createReactClass({
   render: function() {
@@ -29,4 +29,4 @@ var BasicInfo = createReactClass({
 
 })
 
-module.exports = BasicInfo
+export default BasicInfo
