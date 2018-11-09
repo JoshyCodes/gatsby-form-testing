@@ -2,7 +2,7 @@ import React from 'react'
 import BasicInfo from '../components/form'
 import MoreInfo from '../components/MoreInfo'
 import Submit from '../components/submit'
-//xvar Success = require('./Success')
+import Success from './Success'
 import createReactClass from 'create-react-class'
 
 
@@ -51,11 +51,14 @@ var Helpdesk = createReactClass({
                                     saveValues={this.saveValues} />
             case 3:
                 return <Submit      ticketValues={ticketValues}
+                                    nextStep={this.nextStep}
                                     previousStep={this.previousStep}
                                     //submitTicket={this.submitTicket} 
                                     />                        
-        //    case 4:
-        //        return <Success     ticketValues={ticketValues} />
+            case 4:
+                return <Success     //ticketValues={ticketValues} 
+                                    nextStep={this.nextStep}
+                                    />
         }
     },
 
