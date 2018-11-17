@@ -1,29 +1,98 @@
 import React from 'react'
 import createReactClass from 'create-react-class'
+import FormInput from '../components/forminput'
+import FormRadio from '../components/formradio'
 
 var BasicInfo = createReactClass({
   render: function() {
 
     return(
 
-      <form
-      name="contact-form"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      action="/thanks/"
-      className="c-form"
-      >
-        <input type="hidden" name="form-name" value="contact-form" />
+        <div>
 
-        <input className="c-form__field f-form-control" name="name" placeholder="Your Name" type="text" />
-        <input className="c-form__field f-form-control" name="email" placeholder="name@name.com" type="email" />
-        <textarea className="c-form__field f-form-control" name="message" />
-        
+            <div className="flex-row">
+
+              <FormInput 
+                inputLabel="Name"
+                inputType="input"
+                inputPlaceholder="BOB"
+                inputName="fname"
+                inputSubText="First"
+                inputFlow="column"
+                specials=""
+              />
+
+              <FormInput 
+                inputLabel="Name"
+                inputType="input"
+                inputPlaceholder="Ross"
+                inputName="lname"
+                inputSubText="Last"
+                inputFlow="column"
+                specials=""
+              />
+
+          </div>
+
+          <div className="flex-row">
+
+              <FormInput 
+                inputLabel="Email"
+                inputType="input"
+                inputPlaceholder=""
+                inputName="email"
+                inputSubText="Where can we keep you updated on the status of your ticket?"
+                inputFlow="column"
+                specials=""
+              />
+
+              <FormInput 
+                inputLabel="Company"
+                inputType="input"
+                inputPlaceholder=""
+                inputName="company"
+                inputSubText=""
+                inputFlow="column"
+                specials=""
+              />
+
+          </div>
+
+          <div className="flex-row">
+
+              <FormRadio 
+                inputQuestion="What brings you to our humble abode?"
+                inputSubText=" "
+                inputName="radioQ1"
+                inputOptions={[
+                  'Something is Broken 🙁',
+                  'I Need Help with Content Updates',
+                  'I Want to Add New Functionality',
+                  'I Need Help With Something Else'
+                ]}
+                inputFlow="column"
+              />
+
+          </div>
+
+          <div className="flex-row">
+
+            <FormRadio 
+              inputQuestion="Is this an urgent request?"
+              inputSubText="When we see an urgent request we are going to prioritize it over other items in our pipeline. As such, a 25% urgency charge will be added to the total cost of the completed request."
+              inputName="radioQ2"
+              inputOptions={[
+                'No',
+                'Yes'
+              ]}
+              inputFlow="row"
+            />
+
+          </div>
+
         <button className="c-btn c-form__submit" onClick={this.nextStep}>Send</button>
       
-      </form>
-
+        </div>
     )
   },
 
