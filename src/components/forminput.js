@@ -10,7 +10,7 @@ var FormInput = createReactClass({
 
         <h3>{this.props.inputLabel}</h3>
 
-        <input placeholder={this.props.inputPlaceholder} name={this.props.inputName}/>
+        <input placeholder={this.props.inputPlaceholder} ref={this.props.inputName} name={this.props.inputName}/>
         
         <p>{this.props.inputSubText}</p>
       

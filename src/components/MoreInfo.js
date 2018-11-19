@@ -60,6 +60,7 @@ var MoreInfo = createReactClass({
 
             </div>
         
+        <button className="c-btn c-form__submit" onClick={this.previousStep}>Back</button>
         <button className="c-btn c-form__submit" onClick={this.nextStep}>Submit</button>
                                       
       </form>
@@ -79,6 +80,11 @@ var MoreInfo = createReactClass({
 
     //this.props.saveValues(data)
     this.props.nextStep()
+  },
+
+  previousStep: function(e) {
+    e.preventDefault()
+    this.props.previousStep()
   }
 
 })

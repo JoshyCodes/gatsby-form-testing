@@ -6,11 +6,7 @@ import Success from './Success'
 import createReactClass from 'create-react-class'
 
 
-var ticketValues = {
-    name : null,
-    email: null,
-    message : null
-}
+var ticketValues = {}
 
 var Helpdesk = createReactClass({
     getInitialState: function() {
@@ -31,10 +27,20 @@ var Helpdesk = createReactClass({
         })
     },
 
+    saveValues: function(data) {
+        ticketValues = data;
+    },
+
     submitTicket: function() {
         //add ajax submition stuffs
 
         this.nextStep();
+    },
+
+    reset: function() {
+        this.setState({
+            step : this.state.step - 3
+        })
     },
 
     showStep: function() {
@@ -52,12 +58,10 @@ var Helpdesk = createReactClass({
             case 3:
                 return <Submit      ticketValues={ticketValues}
                                     nextStep={this.nextStep}
-                                    previousStep={this.previousStep}
-                                    //submitTicket={this.submitTicket} 
+                                    previousStep={this.previousStep} 
                                     />                        
             case 4:
-                return <Success     //ticketValues={ticketValues} 
-                                    nextStep={this.nextStep}
+                return <Success    reset={this.reset}
                                     />
         }
     },

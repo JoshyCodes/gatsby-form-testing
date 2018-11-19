@@ -22,6 +22,8 @@ var BasicInfo = createReactClass({
                 specials=""
               />
 
+              <button onClick={this.logging} > test </button>
+
               <FormInput 
                 inputLabel="Name"
                 inputType="input"
@@ -32,7 +34,7 @@ var BasicInfo = createReactClass({
                 specials=""
               />
 
-          </div>
+              </div>
 
           <div className="flex-row">
 
@@ -100,16 +102,15 @@ var BasicInfo = createReactClass({
     e.preventDefault()
 
     // Get values via this.refs
-    //var data = {
-    //  name     : this.refs.name.getDOMNode().value,
+    var data = {
+      fname     : document.querySelector('[name="fname"]').value
     //  password : this.refs.password.getDOMNode().value,
     //  email    : this.refs.email.getDOMNode().value,
-    //}
+    }
 
-    //this.props.saveValues(data)
+    this.props.saveValues(data)
     this.props.nextStep()
   }
-
 })
 
 export default BasicInfo

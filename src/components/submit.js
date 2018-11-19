@@ -9,6 +9,7 @@ var Submit = createReactClass({
         <div className="c-intro">
 
             <div className="loader"></div>
+            <h1>{this.props.ticketValues.fname}</h1>
             <button className="c-btn c-form__submit" onClick={this.nextStep}>Send</button>
   
         </div>
